@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ab498b66b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMG-20240331-WA0001-removebg-preview.png" alt="" class="aksh">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                     <i class="fa-solid fa-xmark" id="cross" onclick="closemenu()"></i>  
+                     <!-- <i class="fa-solid fa-bars" id="burg" onclick="openmenu()"></i>  -->
+                </ul>
+                
+                <i class="fa-solid fa-bars" id="burg" onclick="openmenu()"></i>
+            
+              
+                
+                
+              
+            </nav>
+            <div class="header-text">
+                <!--<p>Web Developer</p>
+                <h1>Hi, I'm <span>Akshat</span> <br>Mittal From India</h1> -->
+                <h3>Hello, It's Me</h3>
+                <h1>Akshat Mittal</h1>
+                <h3>And I'm a <span class="text1"></span></h3>
+                <p class="para">I'm Senior full-stack .NET Developer with 5+ years of expertise is to build websites design, and</p>
+                
+                <p class="para">Develop websites using C#, .NET Core, GenAI, AZ Cloud, Web API, Cosmos DB & MSSQL and here is my portfolio website.</p>
+
+            </div>
+        </div>
+    </div>
+  <!------------about------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="d.jpg" id="akshat">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a results-driven Senior full-stack .NET Developer with 5+ years of experience in building scalable, high
+                        performance web applications using C#, .NET Core, GenAI, AZ Cloud, RabbitMQ, ASP.NET MVC, Web API, Cosmos DB and MSSQL
+                    </p>
+                          
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('eduction')">Education</p>
+                          </div>
+
+                          <div class="tab-contents active-tab" id="skills">
+                          <!---  <ul>
+                               <li><span>Technical Skills</span><br>HTML, CSS, C/C++, Javascript, React, Tailwind, Basic Python </li> -->
+                                <!-- <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>Coder</span><br>solve complex coding problem</li> -->
+
+                              <!---  </ul> -->
+                              <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar">
+                                <span class="skill-per html">
+                                    <span class="tooltip">90%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar">
+                                <span class="skill-per css">
+                                    <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="skill-box">
+                            <span class="title">C#</span>
+                            <div class="skill-bar">
+                                <span class="skill-per cpp">
+                                    <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="skill-box">
+                            <span class="title">Javascript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="skill-box">
+                            <span class="title">Angular</span>
+                            <div class="skill-bar">
+                                <span class="skill-per react">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="skill-box">
+                            <span class="title">Azure</span>
+                            <div class="skill-bar">
+                                <span class="skill-per tailwind">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                         <br>
+                        <div class="skill-box">
+                            <span class="title">Typescript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per typescript">
+                                    <span class="tooltip">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="skill-box">
+                            <span class="title">GenAI</span>
+                            <div class="skill-bar">
+                                <span class="skill-per node">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="skill-box">
+                            <span class="title">CosmosDB</span>
+                            <div class="skill-bar">
+                                <span class="skill-per mongo">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                                </div>
+                              
+                            
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July(2023)-Present</span><br>Developed modular business Microservices logic within a distributed architecture using Azure App 
+                                    Services to optimize request routing and ensure high availability across different regions.</li>
+                                <li><span>Jan(2021)-July(2023)</span><br>Engineered a real-time SMS response stamping engine using Clean Architecture and .NET 8, ensuring 
+                                    business logic remains independent of external messaging infrastructure.</li>
+                                <li><span>June(2018)-Jan(2021)</span><br>Led a team of 6 students in building a comprehensive college portal featuring 
+                                    Attendance, Feedback, and Marks which reduced faculty administrative time by 30%.</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="eduction">
+                            <ul>
+                                <li><span>2025-2026</span><br>Executive Development Program in General Management <br>
+                                    Xavier School of Management(XLRI), Jamshedpur</li>
+                                <li><span>2017-2021</span><br>B-Tech(Computer Science Engineering) <br>
+                                    Ajay Kumar Garg Engineering College,Ghaziabad</li>
+                                <li><span>2016-2017</span><br>Intermidiate <br> Lord Mahavira Academy,Saharanpur</li>
+                                <li><span>2014-2015</span><br>HighSchool <br> D.A.V. Public School, Saharanpur</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------Services------------------->
+    
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <!-- <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2> -->
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>Web Developer</h2>
+                        <p>Elevating your digital presence by engineering high-performance, cutting-edge websites and scalable web applications that drive engagement and growth.</p>
+                            <a href="#project">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Performance Optimizer</h2> 
+                        <p>Architecting robust, scalable solutions by translating intricate conceptual frameworks into flawless, high-performance code.</p>
+                            <a href="#about">Learn more</a>
+                    </div>
+                    
+                   
+                     <div>
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <h2>GenAI Engineer</h2>
+                        <p>Connecting LLMs (like GPT, Claude, or open-source models) into enterprise software architectures using frameworks like LangChain, LlamaIndex, or Semantic Kernel.</p>
+                            <a href="#">Learn more</a>
+                    </div> 
+                    <!-- <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam in alias qui iste sapiente dolore accusamus eos aperiam labore 
+                            ipsum corrupti sequi aut, praesentium vel iure sit incidunt deleniti unde?</p>
+                            <a href="#">Learn more</a>
+                    </div>  -->
+                </div>
+            </div>
+        </div>
+
+        <!--**********************Project********************-->
+     <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="cabpharmacy.jpg" alt="">
+                <div class="layer">
+                    <h1>CAB Pharmacy</h1>
+                    <p>An Inventory Management Dashboard for Pharmacy</p>
+                    <br>
+                    <h2><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-css3-alt"></i> </i> <i class="fa-brands fa-angular"></i> <i class="fa-solid fa-code"></i></h2>
+                    <a href="https://github.com/takshat251/cab-pharmacy"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images.jpg" alt="">
+                <div class="layer">
+                    <h1>INVENTORY MANAGEMENT DASHBOARD</h1>
+                    <p>A dynamic dashboard used by 50+ supervisors to automate work assignment for 2000+ operators reducing manual allocation time by 60%.</p>
+                    <br>
+                    <h2><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-angular"> </i> <i class="fa-solid fa-code"></i> </i></h2>
+                    <a href="https://github.com/takshat251/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <!-- <div class="work">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/13/30/check-list-2398890_640.png" alt="">
+                <div class="layer">
+                    <h1>TODO List</h1>
+                    <p>A to-do list is just a list of things you have to-do.</p>
+                    <br>
+                    <h2><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i><h5 style="background-color: aliceblue; color: rgb(232, 23, 93);padding: 2px;">TS</h5></h2>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div> -->
+            
+            <div class="work">
+                <img src="facedetection.jpeg" alt="">
+                <div class="layer">
+                    <h1>Face Detection</h1>
+                    <p>Implementing and fine-tuning real-time object detection models (such as YOLO or SSD) optimized via OpenCV and Python deep learning modules.</p>
+                    <br>
+                    <h2><i class="fa-brands fa-python"></i>  <i class="fa-solid fa-camera"></i> <i class="fa-solid fa-eye"> </i></h2>
+                    <a href="https://github.com/takshat251/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="event.jpeg" alt="">
+                <div class="layer">
+                    <h1>Event Management System</h1>
+                    <p>A professional website for event registration and getting updates about the event</p>
+                    <br>
+                    <h2><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-css3-alt"> <i class="fa-brands fa-bootstrap"> </i></i> <i class="fa-solid fa-code"></i></h2>
+                    <a href="https://github.com/takshat251/EventManagementSystem"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="ww.jpg" alt="">
+                <div class="layer">
+                    <h1>TEXTING SERVICE PLATFORM</h1>
+                    <p>A scalable messaging platform; optimized EF Core data models, enabled asynchronous task handling & processed 50K+ messages/month for 3 major healthcare clients.</p>
+                    <br>
+                    <h2><i class="fa-solid fa-route"></i>  <i class="fa-brands fa-aws"></i> <i class="fa-brands fa-js"></i></h2>
+                    <a href="https://github.com/takshat251/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="friendsbook.jpeg" alt="">
+                    <div class="layer">
+                        <h1>Friends Book</h1>
+                        <p>A Social Media Hub that serves as a One Stop Destination to all Persons with varied Interests</p>
+                        <br>
+                        <h2><i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-aws"></i> <i class="fa-brands fa-angular"> </i> <i class="fa-solid fa-database"></i> </i></h2>
+                        <a href="https://github.com/takshat251/Friends-Book---A-Social-Media-Hub/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+           
+            <div class="work">
+                <img src="a3.jpg" alt="">
+                <div class="layer">
+                    <h1>Portfolio</h1>
+                    <p>Detailed information about mine.</p>
+                    <br>
+                    <h2><i class="fa-brands fa-angular"></i>  <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-python"></i></h2>
+                    <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+     </div>
+
+     <!--*******************contact**************-->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>takshat251@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+916397336540</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akshat.mittal.7982/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/akshatmittal535/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.threads.com/@akshatmittal535/"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.linkedin.com/in/akshat-mittal-2b6a35357/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/takshat251/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="AkshatResume_Jun26.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> <i class="fa-regular fa-copyright"></i> 2026-2030 Akshat Mittal. All right reserved</p>
+        </div>
+     </div>
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }   
+
+   </script>
+<!---***********menu-bar************-->
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    var burgi = document.getElementById("burg");
+    var crosi = document.getElementById("cross");
+
+    // function openmenu(){
+    //     sidemenu.style.left = "350px";
+    // }
+    // function closemenu(){
+    //     sidemenu.style.left = "-550px";
+    // }
+    // sidemenu.style.display = "none";
+    // function res(){
+    //     sidemenu.style.display = "none";
+    // }
+     if(window.matchMedia("(max-width:800px)")){
+       // sidemenu.style.display = "none";
+     }
+    
+    function closemenu(){
+        sidemenu.style.display = "none";
+        burgi.style.display ="block";
+        }
+
+        function openmenu(){
+        sidemenu.style.display = "block";
+        burgi.style.display="none";
+        }
+
+       
+
+</script> 
+<!--************animation*************-->
+<script>
+var typed = new Typed(".text1",{
+    strings:["Fullstack Developer","Web Developer","Fronted Developer","Coder"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+});
+</script>
+
+
+<!--*********git hub script**************-->
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw4Dtcb2VY2f29II6u375C93EqlJVesqR9krQMzGPm32CS_WDcg0UJE54k60hbLTb_V8A/exec'
+const form = document.getElementById('submit-to-google-sheet')
+const msg = document.getElementById("msg")
+
+const formData = new FormData(form);
+
+  // 2. VERIFICATION LOGS: Print data to the browser console
+  console.log("--- Form Submission Verification ---");
+  
+  // Log as a clean, readable table
+  console.table(Object.fromEntries(formData.entries()));
+  
+  // Alternative key/value loop log to check individual field data
+  formData.forEach((value, key) => {
+    console.log(`Field Name: "${key}" | Submitted Value: "${value}"`);
+  });
+  console.log("------------------------------------");
+
+form.addEventListener('submit', e => {
+  e.preventDefault(); // Stops the page from trying to redirect
+  msg.innerHTML = "Sending...";
+  
+  fetch(scriptURL, { 
+    method: 'POST', 
+    mode: 'cors',       // Forces CORS check clearance
+    redirect: 'follow', // Crucial to handle Google's server routing redirection
+    body: new FormData(form)
+  })
+  .then(response => {
+      msg.innerHTML = "Message sent successfully!"
+      setTimeout(function(){ msg.innerHTML = "" }, 5000)
+      form.reset()
+  })
+  .catch(error => {
+      console.error('Error!', error.message);
+      msg.innerHTML = "Submission failed.";
+  });
+});
+
+  </script>
+</body>
+</html>
